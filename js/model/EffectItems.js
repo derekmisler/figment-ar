@@ -6,9 +6,9 @@
  * LICENSE file in the root directory of this source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  */
- 
+
 import * as LoadingConstants from '../redux/LoadingStateConstants';
-import {getSmoke, getEmptyEffect, getGrayScale, getSepia, getSnow, getBubbles, getThermal, getSinCity, getBarrel, getPinCushion, getFireWorks} from '../effects/effects.js'
+import {getSmoke, getEmptyEffect, getGrayScale, getSepia, getSnow, getTransfix, getBubbles, getThermal, getSinCity, getBarrel, getPinCushion, getFireWorks} from '../effects/effects.js'
 import * as EffectsConstants from '../redux/EffectsConstants';
 
 /**
@@ -30,14 +30,23 @@ var EffectItems = [
     "name": "effect_none",
   },
   {
-    "effect": getSnow,
+    "effect": getTransfix,
     "loading": LoadingConstants.NONE,
     "postProcessEffects": EffectsConstants.EFFECT_NONE,
     "icon_img":require("../res/icon_effects_snow.png"),
     "selected": false,
-    "name": "effect_snow",
-    "key": "effect_snow",
+    "name": "transfix",
+    "key": "transfix",
   },
+  // {
+  //   "effect": getSnow,
+  //   "loading": LoadingConstants.NONE,
+  //   "postProcessEffects": EffectsConstants.EFFECT_NONE,
+  //   "icon_img":require("../res/icon_effects_snow.png"),
+  //   "selected": false,
+  //   "name": "effect_snow",
+  //   "key": "effect_snow",
+  // },
   {
     "effect": getBubbles,
     "loading": LoadingConstants.NONE,
@@ -64,7 +73,6 @@ var EffectItems = [
     "selected": false,
     "name": "effect_smoke",
     "key": "effect_smoke",
-
   },
   {
     "effect": getGrayScale,
@@ -98,22 +106,22 @@ var EffectItems = [
     "selected": false,
     "name": "effect_sincity",
   },
-  {
-    "effect": getBarrel,
-    "loading": LoadingConstants.NONE,
-    "postProcessEffects": EffectsConstants.EFFECT_BARREL_DISTORT,
-    "icon_img":require("../res/icon_effects_barreldistort.png"),
-    "selected": false,
-    "name": "effect_barrel_distort",
-  },
-  {
-    "effect": getPinCushion,
-    "loading": LoadingConstants.NONE,
-    "postProcessEffects": EffectsConstants.EFFECT_PINCUSHION_DISTORT,
-    "icon_img":require("../res/icon_effects_pincushion.png"),
-    "selected": false,
-    "name": "effect_pincushion",
-  },
+  // {
+  //   "effect": getBarrel,
+  //   "loading": LoadingConstants.NONE,
+  //   "postProcessEffects": EffectsConstants.EFFECT_BARREL_DISTORT,
+  //   "icon_img":require("../res/icon_effects_barreldistort.png"),
+  //   "selected": false,
+  //   "name": "effect_barrel_distort",
+  // },
+  // {
+  //   "effect": getPinCushion,
+  //   "loading": LoadingConstants.NONE,
+  //   "postProcessEffects": EffectsConstants.EFFECT_PINCUSHION_DISTORT,
+  //   "icon_img":require("../res/icon_effects_pincushion.png"),
+  //   "selected": false,
+  //   "name": "effect_pincushion",
+  // },
 ]
 
 module.exports = {
